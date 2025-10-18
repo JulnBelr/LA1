@@ -1,3 +1,4 @@
+/*
   This program turns ON and OFF LEDs connected to pins 13, 12, and 11 in sequence.
   
 The main concept is digitalWrite(), which sets each pin to HIGH (1) or LOW (0).
@@ -14,26 +15,22 @@ void setup() {
 }
 void loop() { 
   
-// Turn ON LED on pin 13, OFF LEDs on pins 12 and 11
+// Turn ON LED on pin 13, OFF LEDs on pins 12 
   digitalWrite(13, 1); 
   digitalWrite(12, 0); 
-  digitalWrite(11, 0); 
   delay(time);  // Wait for 'time' milliseconds
   
-  // Turn ON LED on pin 12, OFF LEDs on pins 13 and 11
+  // Turn ON LED on pin 12, OFF LEDs on pins 13
   digitalWrite(13, 0); 
-  digitalWrite(12, 1); 
-  digitalWrite(11, 0); 
+  digitalWrite(12, 1);  
   delay(time);  // Wait for 'time' milliseconds 
   
-// Turn ON LED on pin 11, OFF LEDs on pins 13 and 12
-  digitalWrite(13, 0);  
+// Turn ON LED on pin 11, OFF LEDs on pins 12  
   digitalWrite(12, 0); 
   digitalWrite(11, 1); 
   delay(time);  // Wait for 'time' milliseconds
   
-  // Turn ON LED on pin 12 again, OFF LEDs on pins 13 and 11
-  digitalWrite(13, 0);  
+  // Turn ON LED on pin 12 again, OFF LEDs on pins 11  
   digitalWrite(12, 1); 
   digitalWrite(11, 0);  
   delay(time);  // Wait for 'time' milliseconds
